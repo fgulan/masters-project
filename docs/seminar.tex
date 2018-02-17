@@ -1,0 +1,55 @@
+\documentclass[times, utf8, seminar, numeric]{fer}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{color, colortbl}
+\usepackage{csvsimple}
+\usepackage[group-separator={,}]{siunitx}
+\usepackage{afterpage}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{gray1}{rgb}{0.93,0.93,0.93}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color
+  basicstyle=\footnotesize,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{mymauve},     % string literal style
+}
+
+\begin{document}
+
+\title{Očitavanje rukom pisanih slova}
+\author{Filip Gulan}
+\voditelj{doc. dr. sc. Marko Čupić}
+
+\maketitle
+\tableofcontents
+
+\chapter{Uvod}
+\input{chapters/intro.tex}
+
+\chapter{Učenje i rezultati}
+\input{chapters/learning_results.tex}
+
+\chapter{Primjena}
+\input{chapters/usage.tex}
+
+\chapter{Zaključak}
+\input{chapters/conclusion.tex}
+
+\bibliography{literatura}
+\bibliographystyle{fer}
+
+% \chapter{Sažetak}
+% U ovom radu opisana je implementacija i način rada sustav za očitavanje rukom pisanih slova koji je projektiran tako da na svoj ulaz primi sliku slova dimenzija $30 \times 30$, a na svom izlazu vrati prepoznato slovo. Sam sustav je zasnovan na konvolucijskoj neuronskoj mreži učenu metodom \emph{Adam}. Skup za učenje konvolucijske neuronske mreže se sastojao od \num{12,141} velikih i malih tiskanih slova hrvatske i engleske abecede te znaka ''-''. Točnost klasifikatora provjerena je na skupu za ispitivanje koji se sastojao od \num{1063} znaka te je iznosila $96,24 \%$.
+
+\end{document}
